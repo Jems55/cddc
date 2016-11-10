@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/half_overlay"
+        android:drawable="@drawable/profile_name"
+        android:width="10px"
+        android:height="10px"/>
+
+</layer-list>

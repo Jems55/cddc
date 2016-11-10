@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollImage"/>
+
+    <TextView
+        android:layout_marginTop="1200px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Welcome To Omnify"
+        android:id="@+id/instText"
+        android:textSize="70px"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal" />
+
+</FrameLayout>

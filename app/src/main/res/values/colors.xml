@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgColor">#000000</color>
+
+    <color name="firstColor">#FF2D67</color>
+    <color name="secondColor">#7F4B24</color>
+    <color name="thirdColor">#212121</color>
+    <color name="forthColor">#808080</color>
+    <color name="fifthColor">#0177AD</color>
+    <color name="sixthColor">#DA1A1A</color>
+    <color name="seventhColor">#62C0DC</color>
+    <color name="eigthColor">#784491</color>
+    <color name="ninthColor">#F38725</color>
+    <color name="tenthColor">#E75177</color>
+    <color name="eleventhColor">#6FB500</color>
+
+</resources>

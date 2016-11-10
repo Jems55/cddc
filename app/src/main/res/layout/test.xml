@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <LinearLayout
+        android:id="@+id/enterLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_gravity="center_horizontal|bottom"
+        android:paddingBottom="50px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50px">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:id="@+id/dotNoselect1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/no_select"/>
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:id="@+id/dotSelect1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/select"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px">
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:id="@+id/dotNoselect2"
+                    android:layout_gravity="center"
+                    android:background="@drawable/no_select"/>
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:id="@+id/dotSelect2"
+                    android:layout_gravity="center"
+                    android:background="@drawable/select"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px">
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:id="@+id/dotNoselect3"
+                    android:layout_gravity="center"
+                    android:background="@drawable/no_select"/>
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:id="@+id/dotSelect3"
+                    android:layout_gravity="center"
+                    android:background="@drawable/select"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="SIGN UP"
+            android:textSize="60px"
+            android:textStyle="bold"
+            android:id="@+id/txtSignUp"
+            android:textColor="#ffffff"
+            android:layout_height="150px"
+            android:layout_width="match_parent"
+            android:background="@drawable/signup"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="LOG IN"
+            android:textSize="60px"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/txtLogIn"
+            android:textColor="#ffffff"
+            android:layout_height="150px"
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:background="@drawable/login"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

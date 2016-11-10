@@ -1,0 +1,1835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--// webview for the Inapp url-->
+    <WebView android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:visibility="gone"
+        android:id="@+id/youtubeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentTop = "true"
+        android:layout_alignParentLeft="true"/>
+
+    <!--first offer-->
+    <LinearLayout
+        android:id="@+id/firstOffer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/firstFramelayout"
+            android:layout_width="match_parent"
+            android:layout_height="1200px">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/firstImageView1"
+                android:scaleType="centerCrop"/>
+
+            <FrameLayout
+                android:id="@+id/firstFramelayout2"
+                android:layout_width="match_parent"
+                android:layout_height="200px">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/firstHeader"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/header_0"/>
+
+                <TextView
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:text="Header Title"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/firstTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:textSize="80px"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Product Name"
+            android:textColor="#000000"
+            android:layout_marginTop="50px"
+            android:id="@+id/firstTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Price"
+            android:textSize="100px"
+            android:gravity="center"
+            android:id="@+id/firstTextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20px"
+            android:id="@+id/firstLinearLayer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/firstBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/firstBtn2"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/allbutton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:id="@+id/firstLinearLayer2"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/firstBtn3"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:background="@drawable/allbutton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <!--second offer-->
+    <LinearLayout
+        android:id="@+id/secondOffer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/secondFramelayout"
+            android:layout_width="match_parent"
+            android:layout_height="1200px">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/secondImageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <FrameLayout
+                android:id="@+id/secondFramelayout2"
+                android:layout_width="match_parent"
+                android:layout_height="200px">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/secondHeader"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:text="Header Title"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/secondTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/secondLinearLayout1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:layout_marginTop="20px"
+            android:weightSum="1">
+
+            <TextView
+                android:textSize="60px"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Product Name"
+                android:layout_gravity="left"
+                android:layout_marginTop="50px"
+                android:id="@+id/secondTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"/>
+
+            <TextView
+                android:text="Price"
+                android:gravity="right"
+                android:textSize="60px"
+                android:textStyle="bold"
+                android:textColor="#ff4081"
+                android:layout_gravity="right"
+                android:id="@+id/secondTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"/>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="50px"
+            android:paddingLeft="50px"
+            android:textColor="#000000"
+            android:text="Description of your Product"
+            android:id="@+id/secondTextView4"
+            android:layout_width="match_parent"
+            android:layout_height="350px"
+            android:scrollbars="vertical"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondLinearLayout2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/secondBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/secondBtn2"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:id="@+id/secondLinearLayout3"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/secondBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <!--third offer-->
+    <FrameLayout
+        android:id="@+id/thirdOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/thirdImageView1"
+            android:background="@drawable/loginq"/>
+
+        <FrameLayout
+            android:id="@+id/thirdFrameLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/thirdHeader"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+            <TextView
+                android:textSize="60px"
+                android:gravity="center"
+                android:text="Header Title"
+                android:textColor="#FFFFFF"
+                android:id="@+id/thirdTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/thirdFrameLayout1"
+            android:layout_marginTop="1000px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:alpha=".5"
+                android:layout_height="400px"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/thirdLinearLayout1"
+                android:background="@color/cardview_light_background"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="80px"
+                android:layout_marginBottom="80px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/thirdLinearLayout2"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:textSize="80px"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="Product Name"
+                    android:id="@+id/thirdTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+
+                <TextView
+                    android:text="Price"
+                    android:gravity="right"
+                    android:textSize="100px"
+                    android:textStyle="bold"
+                    android:id="@+id/thirdTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/thirdLinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/thirdBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/thirdBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/thirdLinearLayout4"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/thirdBtn3"
+                android:background="@drawable/allbutton"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+
+    <!--Forth offer-->
+    <FrameLayout
+        android:id="@+id/forthOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/forthImageView1"
+            android:background="@drawable/loginq"/>
+
+        <FrameLayout
+            android:id="@+id/forthFrameLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/forthHeader"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/header_0"/>
+
+                <TextView
+                android:textSize="60px"
+                android:gravity="center"
+                android:text="Header Title"
+                android:textColor="#FFFFFF"
+                android:id="@+id/forthTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/forthFrameLayout1"
+            android:layout_marginTop="1000px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:alpha=".5"
+                android:layout_height="400px"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/forthLinearLayout1"
+                android:background="@color/bgColor"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="80px"
+                android:layout_marginBottom="80px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/forthLinearLayout2"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:textSize="80px"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="Product Name"
+                    android:id="@+id/forthTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+
+                <TextView
+                    android:text="Price"
+                    android:gravity="right"
+                    android:textSize="100px"
+                    android:textStyle="bold"
+                    android:textColor="#ff4081"
+                    android:id="@+id/forthTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/forthLinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/forthBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/forthBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/forthLinearLayout4"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/forthBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+
+
+    <!-- 2nd category -->
+    <!--Fifth offer-->
+    <FrameLayout
+        android:id="@+id/fifthOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_height="700px"
+            android:id="@+id/fifthImageView1"
+            android:layout_width="match_parent"
+            android:background="@drawable/loginq"/>
+
+        <FrameLayout
+            android:id="@+id/fifthFrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/fifthHeader"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+                <TextView
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:text="Header Title"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/fifthTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"/>
+        </FrameLayout>
+
+        <TextView
+            android:text="Title"
+            android:textSize="80px"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:id="@+id/fifthTextView2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="580px"
+            android:layout_marginLeft="50px" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingRight="30px"
+            android:paddingLeft="30px"
+            android:layout_marginTop="710px"
+            android:id="@+id/fifthLinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="860px">
+
+            <TextView
+                android:text="Product list"
+                android:textSize="50px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fifthTextView3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/fifthLinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/fifthBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/fifthBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/fifthLinearLayout3"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/fifthBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+    <!--sixth Offer-->
+    <FrameLayout
+        android:id="@+id/sixthOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/sixthImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/sixthFramelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/sixthHeader"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+                <TextView
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:text="Header Title"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/sixthTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:alpha=".7"
+            android:layout_height="640px"
+            android:orientation="horizontal"
+            android:layout_marginTop="950px"
+            android:layout_width="match_parent"
+            android:id="@+id/sixthLinearLayout1"
+            android:background="@color/cardview_light_background"/>
+
+        <LinearLayout
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:orientation="vertical"
+            android:layout_marginTop="1000px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sixthLinearLayout2"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sixthLinearLayout3"
+                android:weightSum="1">
+
+                <TextView
+                    android:textSize="60px"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="Product Name"
+                    android:layout_gravity="left"
+                    android:id="@+id/sixthTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+
+                <TextView
+                    android:text="Price"
+                    android:gravity="right"
+                    android:textSize="60px"
+                    android:textStyle="bold"
+                    android:textColor="#ff4081"
+                    android:layout_gravity="right"
+                    android:id="@+id/sixthTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+            </LinearLayout>
+
+            <TextView
+                android:textSize="50px"
+                android:textColor="#000000"
+                android:layout_marginTop="20px"
+                android:text="Description of your Product"
+                android:id="@+id/sixthTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/sixthLinearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/sixthBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/sixthBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/sixthLinearLayout5"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/sixthBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+
+    <!--seventh offer-->
+    <FrameLayout
+        android:id="@+id/seventhOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/seventhImageView1"/>
+
+        <FrameLayout
+            android:id="@+id/sevenFramelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/sevethHeader"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+
+                <TextView
+                    android:textSize="60px"
+                    android:gravity="center"
+                    android:text="Header Title"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/seventhTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:alpha=".7"
+            android:layout_height="640px"
+            android:orientation="horizontal"
+            android:layout_marginTop="950px"
+            android:layout_width="match_parent"
+            android:id="@+id/seventhLinearLayout1"
+            android:background="@color/bgColor"/>
+
+        <LinearLayout
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:orientation="vertical"
+            android:layout_marginTop="1000px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/seventhLinearLayout2"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seventhLinearLayout3"
+                android:weightSum="1">
+
+                <TextView
+                    android:textSize="60px"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="Product Name"
+                    android:layout_gravity="left"
+                    android:id="@+id/seventhTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+
+                <TextView
+                    android:text="Price"
+                    android:gravity="right"
+                    android:textSize="60px"
+                    android:textStyle="bold"
+                    android:textColor="#ff4081"
+                    android:layout_gravity="right"
+                    android:id="@+id/seventhTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+            </LinearLayout>
+
+            <TextView
+                android:textSize="50px"
+                android:layout_marginTop="20px"
+                android:textColor="#ffffff"
+                android:text="Description of your Product"
+                android:id="@+id/seventhTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/sevethLinearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/sevethBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/sevethBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/sevethLinearLayout5"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/sevethBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+    <!--eigth offer-->
+    <FrameLayout
+        android:id="@+id/eigthOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_height="650px"
+            android:id="@+id/eigthImageView1"
+            android:layout_width="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/eigthFramelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/eigthHeader"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+            <TextView
+                android:textSize="60px"
+                android:gravity="center"
+                android:text="Header Title"
+                android:textColor="#FFFFFF"
+                android:id="@+id/eigthTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:orientation="vertical"
+            android:layout_marginTop="700px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/eigthLinearLayout1">
+
+            <TextView
+                android:textSize="60px"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Title"
+                android:layout_gravity="left"
+                android:id="@+id/eigthTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Subtitle"
+                android:gravity="right"
+                android:textSize="60px"
+                android:textColor="#000000"
+                android:layout_gravity="left"
+                android:id="@+id/eigthTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="50px"
+                android:textColor="#000000"
+                android:layout_marginTop="50px"
+                android:id="@+id/eigthTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:text="Description of your Product"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/eigthLinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/eigthBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/eigthBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/eigthLinearLayout3"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/eigthBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <!--nine offer-->
+    <FrameLayout
+        android:id="@+id/ninthOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:layout_height="700px"
+            android:layout_gravity="left|top"
+            android:id="@+id/ninthYoutubeView"
+            android:layout_width="match_parent"/>
+
+        <!--<VideoView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="650px"-->
+        <!--android:id="@+id/ninthVideoView"-->
+        <!--android:layout_gravity="left|top"/>-->
+
+        <LinearLayout
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:orientation="vertical"
+            android:layout_marginTop="730px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ninthLinearLayout1">
+
+            <TextView
+                android:textSize="60px"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Title"
+                android:layout_gravity="left"
+                android:id="@+id/ninthTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Subtitle"
+                android:gravity="right"
+                android:textSize="60px"
+                android:textColor="#000000"
+                android:layout_gravity="left"
+                android:id="@+id/ninthTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="50px"
+                android:textColor="#000000"
+                android:layout_marginTop="50px"
+                android:id="@+id/ninthTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:text="Description of your Product"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/ninthLinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/ninthBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/ninthBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ninthLinearLayout3"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/ninthBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+    <!--tenth offer-->
+    <FrameLayout
+        android:id="@+id/tenthOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/tenthImageView1"/>
+
+        <FrameLayout
+            android:id="@+id/tenthFramelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/tenthHeader"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+            <TextView
+                android:textSize="60px"
+                android:gravity="center"
+                android:text="Header Title"
+                android:textColor="#FFFFFF"
+                android:id="@+id/tenthTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:alpha=".7"
+            android:layout_marginTop="950px"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tenthLinearLayout1"
+            android:background="@color/cardview_light_background"/>
+
+        <LinearLayout
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:orientation="vertical"
+            android:layout_marginTop="1000px"
+            android:layout_width="match_parent"
+            android:id="@+id/tenthLinearLayout2"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Title"
+                android:textSize="60px"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_gravity="left"
+                android:id="@+id/tenthTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Subtitle"
+                android:gravity="right"
+                android:textSize="60px"
+                android:textColor="#000000"
+                android:layout_gravity="left"
+                android:id="@+id/tenthTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="50px"
+                android:textColor="#000000"
+                android:layout_marginTop="50px"
+                android:id="@+id/tenthTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Description of your Product"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/tenthLinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/tenthBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/tenthBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/tenthLinearLayout4"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/tenthBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <!--eleven offer-->
+    <FrameLayout
+        android:id="@+id/elevenOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/elevenImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/elevenFramelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/elevenHeader"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+            <TextView
+                android:textSize="60px"
+                android:gravity="center"
+                android:text="Header Title"
+                android:textColor="#FFFFFF"
+                android:id="@+id/elevenTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:alpha=".7"
+            android:layout_marginTop="950px"
+            android:orientation="horizontal"
+            android:background="@color/bgColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/elevenLinearLayout1"/>
+
+        <LinearLayout
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:orientation="vertical"
+            android:layout_marginTop="1000px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/elevenLinearLayout2">
+
+            <TextView
+                android:text="Title"
+                android:textSize="60px"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_gravity="left"
+                android:id="@+id/elevenTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Subtitle"
+                android:gravity="right"
+                android:textSize="60px"
+                android:textColor="#ffffff"
+                android:layout_gravity="left"
+                android:id="@+id/elevenTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="50px"
+                android:textColor="#ffffff"
+                android:scrollbars="vertical"
+                android:layout_marginTop="50px"
+                android:id="@+id/elevenTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Description of your Product"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/elevenLinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/elevenBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/elevenBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/elevenLinearLayout4"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/elevenBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+
+    <!--twelve offer-->
+    <FrameLayout
+        android:id="@+id/twelveOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/twelveImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/twelveFrameLayout1"
+            android:layout_marginTop="850px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:alpha=".5"
+                android:layout_height="500px"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/twelveLinearLayout1"
+                android:background="@color/cardview_light_background"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="80px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/twelveLinearLayout2"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:textSize="80px"
+                    android:textColor="#000000"
+                    android:text="Title"
+                    android:id="@+id/twelveTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+
+                <TextView
+                    android:text="450/1000"
+                    android:gravity="right"
+                    android:textSize="200px"
+                    android:textColor="#000000"
+                    android:id="@+id/twelveTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+
+                <TextView
+                    android:text="Subtitle"
+                    android:gravity="right"
+                    android:textSize="100px"
+                    android:textColor="#000000"
+                    android:id="@+id/twelveTextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <!--thirteen offer-->
+    <FrameLayout
+        android:id="@+id/thirteenOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/thirteenImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/thirteenFrameLayout1"
+            android:layout_marginTop="850px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:alpha=".5"
+                android:layout_height="500px"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/thirteenLinearLayout1"
+                android:background="@color/cardview_light_background"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="80px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/thirteenLinearLayout2"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:textSize="80px"
+                    android:textColor="#000000"
+                    android:text="Title"
+                    android:id="@+id/thirteenTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+
+    <!--forteen offer-->
+    <FrameLayout
+        android:id="@+id/forteenOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/forteenImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/forteenFrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:alpha=".2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/forteenLinearLayout1"
+                android:background="@color/cardview_light_background"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="600px"
+                android:layout_marginBottom="80px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/forteenLinearLayout2"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:textSize="120px"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="T-shirt"
+                    android:id="@+id/forteenTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+
+                <TextView
+                    android:textSize="80px"
+                    android:textColor="#ffffff"
+                    android:text="50% discount"
+                    android:id="@+id/forteenTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <!--<LinearLayout-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:id="@+id/forteenLinearLayout3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="20px"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:visibility="gone">-->
+
+        <!--<Button-->
+        <!--android:text="New Button"-->
+        <!--android:id="@+id/forteenBtn1"-->
+        <!--android:layout_width="350px"-->
+        <!--android:layout_height="150px"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="@drawable/allbutton"/>-->
+
+        <!--<Button-->
+        <!--android:text="New Button"-->
+        <!--android:layout_marginLeft="20px"-->
+        <!--android:layout_width="350px"-->
+        <!--android:layout_height="150px"-->
+        <!--android:id="@+id/forteenBtn2"-->
+        <!--android:background="@drawable/allbutton"/>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/forteenLinearLayout3"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/forteenBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+    <!--fifteen offer-->
+    <FrameLayout
+        android:id="@+id/fifteenOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/fifteenImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/fifteenLinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/fifteenBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/fifteenBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/fifteenLinearLayout2"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/fifteenBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <!--sixteen offer-->
+    <FrameLayout
+        android:id="@+id/sixteenOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:layout_height="700px"
+            android:id="@+id/sixteenYoutubeView"
+            android:layout_width="match_parent"
+            android:layout_gravity="left|top"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="700px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sixteenLinearLayout1">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/sixteenImageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/sixteenLinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:id="@+id/sixteenBtn1"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/allbutton"/>
+
+            <Button
+                android:text="New Button"
+                android:layout_marginLeft="20px"
+                android:layout_width="350px"
+                android:layout_height="150px"
+                android:id="@+id/sixteenBtn2"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/sixteenLinearLayout3"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:text="New Button"
+                android:layout_width="500px"
+                android:layout_height="150px"
+                android:id="@+id/sixteenBtn3"
+                android:background="@drawable/allbutton"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <!--seventeen offer-->
+    <FrameLayout
+        android:id="@+id/seventeenOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:layout_height="match_parent"
+            android:id="@+id/seventeenYoutubeView"
+            android:layout_width="match_parent"
+            android:layout_gravity="left|top"/>
+
+    </FrameLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- The main content view -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:background="@drawable/offersearch"/>
+
+        <LinearLayout
+            android:id="@+id/linearlay"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <FrameLayout
+                android:id="@+id/contectFrame"
+                android:layout_width="655px"
+                android:layout_height="655px">
+
+                <!--<ProgressBar-->
+                    <!--android:id="@+id/progressBar"-->
+                    <!--android:layout_width="230dp"-->
+                    <!--android:layout_height="250dp"-->
+                    <!--android:indeterminate="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:indeterminateDrawable="@drawable/otherprogress"/>-->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/progressBar"
+                    android:background="@drawable/omnifyicon"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/failedOfferImg"
+                    android:background="@drawable/omnifyicon"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Searching for offer..."
+                android:id="@+id/searchMsg"
+                android:paddingTop="30dp"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:id="@+id/btnMenu"
+            android:background="@drawable/menu_white_24dp"/>
+        </FrameLayout>
+
+        <!-- The navigation drawer -->
+        <FrameLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menudrawer"
+                android:layout_gravity="left|top" />
+
+            <LinearLayout
+                android:id="@+id/linearlay2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|top">
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nearby Offers"
+                android:fontFamily="sans-serif"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textOption1"/>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="All Offers"
+                android:id="@+id/textOption2"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif"/>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Pinned Offers"
+                android:fontFamily="sans-serif"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textOption3"/>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Points &amp; Coupons   "
+                android:id="@+id/textOption4"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif"/>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Store Locator"
+                android:fontFamily="sans-serif"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textOption5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Settings"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/textOption6"/>
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Omnify</string>
+    <string name="facebook_app_id">163912064047823</string>
+    <string name="Is_login">LoginDone</string>
+    <string name="Login_ID">LoginID</string>
+    <string name="fb_login_protocol_scheme">fbAPP_ID</string>
+    <string name="daily_noti">Hello this is test</string>
+</resources>

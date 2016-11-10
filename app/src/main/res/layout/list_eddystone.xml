@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal" />
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/drawer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/menudrawer"-->
+            <!--android:layout_gravity="left|top"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/linearlay2"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="left|top"-->
+            <!--android:paddingTop="300px"-->
+            <!--android:paddingLeft="200px">-->
+
+            <!--<TextView-->
+                <!--android:paddingTop="25px"-->
+                <!--android:paddingBottom="25px"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="Nearby Offers"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="60px"-->
+                <!--android:id="@+id/textOption1" />-->
+
+            <!--<TextView-->
+                <!--android:paddingTop="25px"-->
+                <!--android:paddingBottom="25px"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="All Offers"-->
+                <!--android:id="@+id/textOption2"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="60px"-->
+                <!--android:fontFamily="sans-serif" />-->
+
+            <!--<TextView-->
+                <!--android:paddingTop="25px"-->
+                <!--android:paddingBottom="25px"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="Pinned Offers"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="60px"-->
+                <!--android:id="@+id/textOption3" />-->
+
+            <!--<TextView-->
+                <!--android:paddingTop="25px"-->
+                <!--android:paddingBottom="25px"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="Points &amp; Coupons"-->
+                <!--android:id="@+id/textOption4"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="60px"-->
+                <!--android:fontFamily="sans-serif" />-->
+
+            <!--<TextView-->
+                <!--android:paddingTop="25px"-->
+                <!--android:paddingBottom="25px"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="Store Locator"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="60px"-->
+                <!--android:id="@+id/textOption5" />-->
+        <!--</LinearLayout>-->
+    <!--</FrameLayout>-->
+</LinearLayout>
